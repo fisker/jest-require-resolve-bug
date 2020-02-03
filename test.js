@@ -1,19 +1,17 @@
-const path = require('path')
-
 test('should throws', () => {
   expect(() => {
-    require.resolve('foo/node_modules/bar');
+    require.resolve('test');
   }).toThrow()
 })
 
 test('should throws too', () => {
   expect(() => {
-    require.resolve('foo/node_modules/bar', {paths: [process.cwd()]});
+    require.resolve('test', {paths: [process.cwd()]});
   }).toThrow()
 })
 
 test('should not equal', () => {
   expect(
-    require.resolve('foo/node_modules/bar', {paths: [process.cwd()]})
+    require.resolve('test', {paths: [process.cwd()]})
   ).toBe('?????????')
 })

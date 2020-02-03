@@ -3,10 +3,10 @@
 On root run
 
 ```bash
-node -p "require.resolve('foo/node_modules/bar', {paths: [process.cwd()]})"
+node -p "require.resolve('test', {paths: [process.cwd()]})"
 ```
 
-Should see `Error: Cannot find module 'foo/node_modules/bar'`
+Should see `Error: Cannot find module 'test'`
 
 ---
 
