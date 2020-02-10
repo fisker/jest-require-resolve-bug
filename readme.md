@@ -1,4 +1,4 @@
-# Step
+# Steps
 
 On root run
 
@@ -13,4 +13,8 @@ Should see `Error: Cannot find module 'test'`
 
 Run `yarn test`
 
-Tests not passed
+Tests not passing.
+
+---
+
+issue: https://github.com/facebook/jest/issues/9502
